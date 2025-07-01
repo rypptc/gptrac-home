@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gpTRAC - Simplified Bootstrap Version</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Open+Sans:400,600,700|Poppins:300,400" rel="stylesheet">
+    <style>
+        /* Extracted from gptrc.css for brand consistency */
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .top-menu a {
+            font-family: 'PT Serif', serif;
+            font-weight: 700;
+        }
+
+        .navbar-brand img {
+            max-width: 10em;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: .5rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: .5rem;
+            height: 100%;
+        }
+
+        .feature-card img {
+            max-height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            color: #7a0019; /* gpTRAC red */
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="bg-white border-bottom py-3">
+        <div class="container d-flex justify-content-between align-items-start">
+            <!-- Logo -->
+            <a href="#" class="me-4">
+            <img src="https://gptrac.org/static/media/gpTRAC_PrimaryLogo_NoTAG_3C.f824bf84.svg" alt="gpTRAC Logo" style="height: 48px;" />
+            </a>
+
+            <!-- Right side: Top links + Main nav stacked vertically -->
+            <div class="d-flex flex-column w-100">
+            <!-- Top links -->
+            <div class="d-flex justify-content-end mb-2 d-none d-lg-flex">
+                <a class="text-decoration-none text-secondary me-3" href="#">Home</a>
+                <a class="text-decoration-none text-secondary" href="#">About Us</a>
+            </div>
+
+            <!-- Main nav -->
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <div class="container-fluid p-0">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Policy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Conference</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            </div>
+        </div>
+
+        <!-- State links + search bar -->
+        <div class="bg-light py-2 mt-2">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div class="state-links mb-2 mb-lg-0">
+                <a class="text-decoration-none text-secondary me-3" href="#">IA</a>
+                <a class="text-decoration-none text-secondary me-3" href="#">MN</a>
+                <a class="text-decoration-none text-secondary me-3" href="#">NE</a>
+                <a class="text-decoration-none text-secondary me-3" href="#">ND</a>
+                <a class="text-decoration-none text-secondary me-3" href="#">SD</a>
+                <a class="text-decoration-none text-secondary" href="#">WI</a>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search Site" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- NOTE: Replace with your image path -->
+                <img src="https://gptrac.org/steth-in-hand.jpg/@@images/image/huge" class="d-block w-100" alt="Telehealth Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Great Plains Telehealth Resource & Assistance Center</h5>
+                    <p>Supporting your telehealth journey.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- NOTE: Replace with your image path -->
+                <img src="https://gptrac.org/resolveuid/b00e0a77d7ec4d83a1746e1b72422ec3/@@images/image/huge" class="d-block w-100" alt="Telehealth Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Great Plains Telehealth Resource & Assistance Center</h5>
+                    <p>Regional experts connected to national resources.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!-- NOTE: Replace with your image path -->
+                <img src="https://gptrac.org/dsc7044.jpeg/@@images/image/huge" class="d-block w-100" alt="Conference Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TELEHEALTH EVERYWHERE! 2025</h5>
+                    <p>The region's premier telehealth conference.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Main Content Column -->
+            <div class="col-md-8">
+                <!-- Three Column Feature Section -->
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <!-- NOTE: Replace with your image path -->
+                            <img src="https://gptrac.org/icons/providerinfo_icon_pms-7721-2.png/@@images/image/preview" alt="Get Informed">
+                            <h2>Get Informed</h2>
+                            <h3>Telehealth Policy Pages</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <!-- NOTE: Replace with your image path -->
+                            <img src="https://gptrac.org/icons/toolkit_icon_pms-7721-2.png/@@images/image/preview" alt="Get Answers">
+                            <h2>Get Answers</h2>
+                            <h3>Browse Our Resources</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <!-- NOTE: Replace with your image path -->
+                            <img src="https://gptrac.org/icons/telemedicine_icon_pms-7721-2.png/@@images/image/preview" alt="Get Connected">
+                            <h2>Get Connected</h2>
+                            <h3>Ask us a question</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Who We Are Section -->
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2 class="section-title">Who We Are & What We Do</h2>
+                        <p>The Great Plains Telehealth Resource and Assistance Center (gpTRAC) is a federally funded telehealth training and technical assistance center located&nbsp;at the University of Minnesota. We provide free resources, including training, tailored consultations, and print and web-based resources to healthcare organizations of all kinds seeking to design, implement, grow, sustain, and evaluate telehealth services.</p>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- University of Minnesota Section -->
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="section-title text-start">GPTRAC IS A PROJECT OF THE UNIVERSITY OF MINNESOTA<br>INSTITUTE FOR HEALTH INFORMATICS</h2>
+                        <p>The Institute for Health Informatics (IHI) educates students,&nbsp;conducts research, and provides technical assistance services in the fields of biomedical and health informatics.&nbsp; It focuses on the design, use, and evaluation of information systems that support and improve healthcare while protecting the safety and confidentiality of those who receive care. IHI is an interdisciplinary effort that encompasses work in a variety of settings from tertiary care hospitals to specialty clinics, mental health facilities, community clinics, nursing homes, and home care agencies.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <!-- NOTE: Replace with your image path -->
+                        <img src="https://gptrac.org/de30b400-dd07-490e-95bd-55f6606c2a70.png/@@images/image" class="img-fluid" alt="University of Minnesota Logo">
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Success Stories Section -->
+                <div>
+                    <h2 class="section-title">Success Stories from Our Region</h2>
+                    <div id="storiesCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="row g-0">
+                                        <div class="col-md-6">
+                                            <img src="https://gptrac.org/stories/just-the-tip-of-the-iceberg-1/@@images/image/large" class="img-fluid rounded-start" alt="Story 1">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Just the Tip of the Iceberg: North Dakota Healthcare System Continues to Expand Its Telehealth Services</h5>
+                                                <p class="card-text">Altru expands care and increases patient safety during COVID by offering video and phone visits, message-based eVisits, and provider-to-provider consultations. Altru is a Program Advisory Council (PAC) member of gpTRAC.</p>
+                                                <a href="#" class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="row g-0">
+                                        <div class="col-md-6">
+                                            <img src="https://gptrac.org/stories/virtual-care-teams-enhance-patient-care/@@images/image/large" class="img-fluid rounded-start" alt="Story 2">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Virtual Care Teams Enhance Patient Care: MercyOne Des Moines Finds Telehealth Improves Communication, Efficiency and Outcomes</h5>
+                                                <p class="card-text">MercyOne Des Moines revitalizes the Virtually Integrated Care model to support patient care, improve efficiencies, and help families stay connected during the COVID-19 pandemic. MercyOne is a Program Advisory Council (PAC) member of gpTRAC.</p>
+                                                <a href="#" class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="row g-0">
+                                        <div class="col-md-6">
+                                            <img src="https://gptrac.org/stories/transformation-of-tears-telehealth-program-brings-mental-health-services-to-rural-school-students/@@images/image/large" class="img-fluid rounded-start" alt="Story 3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Transformation of Tears: Telehealth Program Brings Mental Health Services to Rural School Students</h5>
+                                                <p class="card-text">Classroom Clinic, a telehealth company owned by a psychiatric nurse practitioner, pilots a school-based telehealth program to provide mental health services to rural students in Iowa. Classroom Clinic has consulted with gpTRAC.</p>
+                                                <a href="#" class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#storiesCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#storiesCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- National Consortium Section -->
+                <div class="text-center">
+                    <h3 class="section-title">gpTRAC is a member of the National Consortium of Telehealth Resource Centers</h3>
+                    <img src="https://gptrac.org/nctrc-5-1.jpg/@@images/image" class="img-fluid" alt="NCTRC Logo">
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Partner Telehealth Resource Centers Section -->
+                <div class="text-center">
+                    <h2 class="section-title">PARTNER TELEHEALTH RESOURCE CENTERS</h2>
+                    <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="https://www.cchpca.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/51b0650d8b6a4a7897a291d9044ae936/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://telehealthtechnology.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/37aebf21886945e28eabb8ca8cc9b418/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://www.netrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/814c841c8a03496c8b1d102702c48fc5/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="https://www.matrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/607fcf8156bc4a3abf00fb936639304a/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="http://heartlandtrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/30d0b4143d9141b9abe2751cd5fc5a3d/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://www.pbtrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/ef70e29219024a89b2c16b8a497ac7dc/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="https://www.caltrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/1fe042fcd0cf484eb37e2b9b98866ab6/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://nrtrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/6e4ce7c24ea9484194bb096a183ba0a7/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://setrc.us/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/4c373bdf40ba42d5adb5e0c27d296652/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="https://southwesttrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/40b2dd08c26945dda6aa7ac88869eec7/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://texlatrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/4a28f741558b4877bfbc0b4ff8d004e3/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="https://learntelehealth.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/8147d0325d394fc4bb71eaf4bdcfc3e0/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="https://www.umtrc.org/" target="_blank" rel="noreferrer"><img src="https://gptrac.org/resolveuid/a1c0ef0610bc4d29bcfa090e0177be48/@@images/image/large" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Column -->
+            <div class="col-md-4">
+                <div class="p-3 mb-3 bg-light rounded">
+                    <h4 class="fst-italic">Contact Us</h4>
+                    <p class="mb-0">gptrac@umn.edu / 888-239-7092</p>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Stay Connected</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name*</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail address*</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comment" class="form-label">Question/Comment</label>
+                                <textarea class="form-control" id="comment" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">News</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-decoration-none">The Convenience of Telehealth for Rural Patients</a>
+                                <p>Recently, a University of Tennessee, Knoxville, study investigated the financial benefits of telehealth. While the benefits are stronger from the patient’s perspective, the rural providers and hospitals could have long-term challenges, according to this study.</p>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none">Telehealth Offset Declines in Primary Care Visits, but Not Equally</a>
+                                <p>The drop in care visits during the pandemic were often offset through the use of telehealth visits. However, according to the study in the Annual of Family Medicine, this offset varies by patient groups and can still depend upon various social determinants of health factors.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Events</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-decoration-none">Telehealth T-Time: Digital Behavioral Health</a>
+                                <p>gpTRAC is a proud sponsor of Telehealth T-Time: A Community for Telehealth Enthusiasts — a free monthly event to learn from and network with your telehealth peers. To learn more about this month’s event and register for free visit Telehealth-T-Time.com.</p>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none">NCTRC Webinar - Advancing Telehealth Integration in Patient Care</a>
+                                <p>As healthcare evolves, virtual nursing emerges as a transformative solution addressing workforce challenges, improving patient outcomes, and integrating seamlessly into telehealth ecosystems. Julie Wright, MSN, RN - Managing Director, Institute of Telehealth &amp; Digital Innovation, Texas Tech University Health Sciences Center explores the state of nursing today, common care models, and the market forces driving innovation.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://gptrac.org/static/media/gptrac_reversed.140a10ad.svg" alt="GPTRAC Logo" class="logo-footer" width="150">
+                </div>
+                <div class="col-md-6">
+                    <p>This project is supported by the Health Resources and Services Administration (HRSA) of the U.S. Department of Health and Human Services (HHS) under grant numbers U1UTH42525 and G01RH32157. This information or content and conclusions are those of the author and should not be construed as the official position or policy of, nor should any endorsements be inferred by HRSA, HHS or the U.S. Government.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="social-footer">
+                        <h3>Social Media</h3>
+                        <a href="https://www.linkedin.com/company/gptrac/" title="LinkedIn" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/gptrac" title="twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <nav class="footer-nav">
+                        <a href="#" class="me-3">Home</a>
+                        <a href="#" class="me-3">About Us</a>
+                        <a href="#" class="me-3">Stories</a>
+                        <a href="#" class="me-3">News</a>
+                        <a href="#">Events</a>
+                    </nav>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">BACK TO TOP</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <div class="login-button">
+                        <a href="#" class="btn btn-primary">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
