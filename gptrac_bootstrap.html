@@ -60,9 +60,56 @@
             padding: 2rem 0;
             margin-top: 2rem;
         }
+
+        .skiplinks-wrapper {
+            position: absolute;
+            top: -100%;
+        }
+
+        .skiplinks-wrapper a.skiplink {
+            display: inline-block;
+            color: #003557;
+        }
+
+        .skiplinks-wrapper a.skiplink:focus {
+            position: fixed;
+            z-index: 9999;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            border: 2px solid #003557;
+            background: #fff;
+            outline: 3px solid #003557;
+        }
+
+        .skiplinks-wrapper a.skiplink:hover {
+            border-color: #002d4a;
+            color: #002d4a;
+        }
+
+        .dsclmr {
+            width: 90%;
+            margin-top: 2em;
+        }
+
+        .dsclmr p {
+            font-size: .7em !important;
+            text-align: justify;
+        }
+
+        .login-footer {
+            margin: 2em 0 0;
+            height: 48px !important;
+        }
     </style>
 </head>
 <body>
+    <div role="navigation" aria-label="Toolbar" id="toolbar"></div>
+    <div class="skiplinks-wrapper" role="complementary" aria-label="skiplinks">
+        <a class="skiplink" href="#view">Skip to main content</a>
+        <a class="skiplink" href="#navigation">Skip to navigation</a>
+        <a class="skiplink" href="#footer">Skip to footer</a>
+    </div>
 
     <!-- Header and Navigation -->
     <header class="bg-white border-bottom py-3">
@@ -81,7 +128,7 @@
             </div>
 
             <!-- Main nav -->
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <nav id="navigation" class="navbar navbar-expand-lg navbar-light p-0">
                 <div class="container-fluid p-0">
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                         aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,6 +167,16 @@
             </div>
         </div>
     </header>
+
+    <div class="header-visibility-sensor"> </div>
+    <div id="header-spacer"></div>
+    <nav aria-label="Breadcrumb" class="bg-light py-2">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+            </ol>
+        </div>
+    </nav>
 
 
     <!-- Hero Carousel -->
@@ -161,7 +218,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="container mt-5">
+    <div id="view" class="container mt-5">
         <div class="row">
             <!-- Main Content Column -->
             <div class="col-md-8">
@@ -435,14 +492,16 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer bg-light pt-5 pb-4">
+    <footer id="footer" class="footer bg-light pt-5 pb-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <img src="https://gptrac.org/static/media/gptrac_reversed.140a10ad.svg" alt="GPTRAC Logo" class="logo-footer" width="150">
                 </div>
                 <div class="col-md-6">
-                    <p>This project is supported by the Health Resources and Services Administration (HRSA) of the U.S. Department of Health and Human Services (HHS) under grant numbers U1UTH42525 and G01RH32157. This information or content and conclusions are those of the author and should not be construed as the official position or policy of, nor should any endorsements be inferred by HRSA, HHS or the U.S. Government.</p>
+                    <div class="dsclmr">
+                        <p>This project is supported by the Health Resources and Services Administration (HRSA) of the U.S. Department of Health and Human Services (HHS) under grant numbers U1UTH42525 and G01RH32157. This information or content and conclusions are those of the author and should not be construed as the official position or policy of, nor should any endorsements be inferred by HRSA, HHS or the U.S. Government.</p>
+                    </div>
                 </div>
                 <div class="col-md-3">
                     <div class="social-footer">
@@ -468,8 +527,10 @@
             </div>
             <div class="row mt-3">
                 <div class="col-md-12 text-center">
-                    <div class="login-button">
-                        <a href="#" class="btn btn-primary">Log in</a>
+                    <div class="login-footer">
+                        <div class="login-button">
+                            <a href="#" class="btn btn-primary">Log in</a>
+                        </div>
                     </div>
                 </div>
             </div>
