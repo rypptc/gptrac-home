@@ -25,6 +25,13 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+header.header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+
 .top-menu a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -38,10 +45,44 @@ a:hover {
     text-transform: uppercase;
 }
 
-.state-links a {
+.nav-hover-dark:hover {
+    background-color: #343a40; /* Bootstrap dark */
+    color: #fff !important;
+    border-radius: 0.25rem;
+}
+
+.link-hover-dark:hover {
+    background-color: #343a40;
+    color: #fff !important;
+}
+
+#top-bar {
+  padding: 0 1em;
+  margin-right: -1em;
+  margin-left: -1em;
+  background-color: #045454;
+}
+
+.state-link {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.state-link:hover {
+  color: rgb(205, 153, 56);
+}
+
+/* .state-links a {
     color: #6c757d;
     text-decoration: none;
-}
+} */
 
 .logo-nav-wrapper {
     display: flex;
@@ -65,19 +106,41 @@ a:hover {
 /* Hero Carousel */
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     color: #fff;
     padding: 1.5rem;
+    bottom: 0; /* Alinea como en original */
 }
 
 .carousel-caption h5 {
+    color: #fff;
     font-size: 2rem;
     font-weight: bold;
 }
 
 .carousel-caption p {
+    color: #fff;
     font-size: 1.2rem;
 }
+
+#heroCarousel .carousel-item {
+  height: 600px;
+}
+
+#heroCarousel .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+#heroCarousel .carousel-item img {
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+  margin-top: 0;
+}
+
 
 /* Feature Cards */
 .feature-card {
