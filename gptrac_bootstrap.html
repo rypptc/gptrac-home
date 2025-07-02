@@ -11,56 +11,9 @@
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Open+Sans:400,600,700|Poppins:300,400" rel="stylesheet">
-    <style>
-        /* Extracted from gptrc.css for brand consistency */
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .top-menu a {
-            font-family: 'PT Serif', serif;
-            font-weight: 700;
-        }
-
-        .navbar-brand img {
-            max-width: 10em;
-        }
-
-        .carousel-caption {
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: .5rem;
-        }
-
-        .feature-card {
-            text-align: center;
-            padding: 2rem;
-            border: 1px solid #ddd;
-            border-radius: .5rem;
-            height: 100%;
-        }
-
-        .feature-card img {
-            max-height: 80px;
-            margin-bottom: 1rem;
-        }
-
-        .section-title {
-            color: #7a0019; /* gpTRAC red */
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .footer {
-            background-color: #f8f9fa;
-            padding: 2rem 0;
-            margin-top: 2rem;
-        }
-    </style>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="gptrac_bootstrap_styles.css">
 </head>
 <body>
 
@@ -369,6 +322,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
 
             <!-- Sidebar Column -->
@@ -403,12 +357,12 @@
                     <div class="card-body">
                         <h5 class="card-title">News</h5>
                         <ul class="list-unstyled">
-                            <li>
-                                <a href="#" class="text-decoration-none">The Convenience of Telehealth for Rural Patients</a>
+                            <li class="news-item">
+                                <a href="#" class="text-decoration-none"><h5>The Convenience of Telehealth for Rural Patients</h5></a>
                                 <p>Recently, a University of Tennessee, Knoxville, study investigated the financial benefits of telehealth. While the benefits are stronger from the patient’s perspective, the rural providers and hospitals could have long-term challenges, according to this study.</p>
                             </li>
-                            <li>
-                                <a href="#" class="text-decoration-none">Telehealth Offset Declines in Primary Care Visits, but Not Equally</a>
+                            <li class="news-item">
+                                <a href="#" class="text-decoration-none"><h5>Telehealth Offset Declines in Primary Care Visits, but Not Equally</h5></a>
                                 <p>The drop in care visits during the pandemic were often offset through the use of telehealth visits. However, according to the study in the Annual of Family Medicine, this offset varies by patient groups and can still depend upon various social determinants of health factors.</p>
                             </li>
                         </ul>
@@ -419,12 +373,12 @@
                     <div class="card-body">
                         <h5 class="card-title">Events</h5>
                         <ul class="list-unstyled">
-                            <li>
-                                <a href="#" class="text-decoration-none">Telehealth T-Time: Digital Behavioral Health</a>
+                            <li class="event-item">
+                                <a href="#" class="text-decoration-none"><h5>Telehealth T-Time: Digital Behavioral Health</h5></a>
                                 <p>gpTRAC is a proud sponsor of Telehealth T-Time: A Community for Telehealth Enthusiasts — a free monthly event to learn from and network with your telehealth peers. To learn more about this month’s event and register for free visit Telehealth-T-Time.com.</p>
                             </li>
-                            <li>
-                                <a href="#" class="text-decoration-none">NCTRC Webinar - Advancing Telehealth Integration in Patient Care</a>
+                            <li class="event-item">
+                                <a href="#" class="text-decoration-none"><h5>NCTRC Webinar - Advancing Telehealth Integration in Patient Care</h5></a>
                                 <p>As healthcare evolves, virtual nursing emerges as a transformative solution addressing workforce challenges, improving patient outcomes, and integrating seamlessly into telehealth ecosystems. Julie Wright, MSN, RN - Managing Director, Institute of Telehealth &amp; Digital Innovation, Texas Tech University Health Sciences Center explores the state of nursing today, common care models, and the market forces driving innovation.</p>
                             </li>
                         </ul>
@@ -435,7 +389,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer bg-light pt-5 pb-4">
+    <footer class="footer bg-dark text-white pt-5 pb-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
