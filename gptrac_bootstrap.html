@@ -58,28 +58,38 @@
         </div>
 
         <div id="top-bar" class="py-2 mt-2">
-            <div class="container d-flex flex-wrap justify-content-between align-items-center">
-            <div class="state-links mb-2 mb-lg-0">
-                <a class="state-link" href="/policy/iowa">Iowa</a>
-                <a class="state-link" href="/policy/minnesota">Minnesota</a>
-                <a class="state-link" href="/policy/nebraska">Nebraska</a>
-                <a class="state-link" href="/policy/north-dakota">North Dakota</a>
-                <a class="state-link" href="/policy/south-dakota">South Dakota</a>
-                <a class="state-link" href="/policy/wisconsin">Wisconsin</a>
-            </div>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" name="SearchableText" placeholder="Search Site" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">
-                    <i class="bi bi-search"></i>
-                </button>
-            </form>
+            <div class="container-fluid d-flex align-items-center px-3 flex-nowrap">
+                <div class="state-links flex-grow-1 d-flex flex-wrap gap-1">
+                    <span class="d-none d-md-inline">
+                        <a class="state-link" href="/policy/iowa">Iowa</a>
+                        <a class="state-link" href="/policy/minnesota">Minnesota</a>
+                        <a class="state-link" href="/policy/nebraska">Nebraska</a>
+                        <a class="state-link" href="/policy/north-dakota">North Dakota</a>
+                        <a class="state-link" href="/policy/south-dakota">South Dakota</a>
+                        <a class="state-link" href="/policy/wisconsin">Wisconsin</a>
+                    </span>
+                    <span class="d-md-none">
+                        <a class="state-link" href="/policy/iowa">IA</a>
+                        <a class="state-link" href="/policy/minnesota">MN</a>
+                        <a class="state-link" href="/policy/nebraska">NE</a>
+                        <a class="state-link" href="/policy/north-dakota">ND</a>
+                        <a class="state-link" href="/policy/south-dakota">SD</a>
+                        <a class="state-link" href="/policy/wisconsin">WI</a>
+                    </span>
+                </div>
+                <form class="d-flex search-bar ms-auto" role="search">
+                    <input class="form-control me-2" type="search" name="SearchableText" placeholder="Search Site" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </header>
 
 
     <!-- Hero Carousel -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- NOTE: Replace with your image path -->
@@ -152,12 +162,16 @@
                 <hr class="my-5">
 
                 <!-- Who We Are Section -->
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-md-12">
-                        <h2 class="section-title">Who We Are & What We Do</h2>
-                        <p>The Great Plains Telehealth Resource and Assistance Center (gpTRAC) is a federally funded telehealth training and technical assistance center located&nbsp;at the University of Minnesota. We provide free resources, including training, tailored consultations, and print and web-based resources to healthcare organizations of all kinds seeking to design, implement, grow, sustain, and evaluate telehealth services.</p>
+                        <div class="front-page-callout">
+                            <h2>Who We Are &amp; What We Do</h2>
+                            <p>The Great Plains Telehealth Resource and Assistance Center (gpTRAC) is a federally funded telehealth training and technical assistance center located at the University of Minnesota. We provide free resources, including training, tailored consultations, and print and web-based resources to healthcare organizations of all kinds seeking to design, implement, grow, sustain, and evaluate telehealth services.</p>
+                        </div>
                     </div>
                 </div>
+
+                
 
                 <hr class="my-5">
 
