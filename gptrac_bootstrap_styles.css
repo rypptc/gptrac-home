@@ -43,12 +43,18 @@ a:hover {
     text-decoration: none;
 }
 
+.logo-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo img {
     transition: all 0.3s ease-in-out;
 }
 
 .scrolled .logo img {
-    height: 32px !important;
+    max-width: 8em !important;
 }
 
 .scrolled .top-menu {
