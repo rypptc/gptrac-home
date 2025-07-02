@@ -22,6 +22,7 @@ a:hover {
 /* Header */
 .header {
     border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
 }
 
 .top-menu a {
@@ -41,6 +42,19 @@ a:hover {
     color: #6c757d;
     text-decoration: none;
 }
+
+.logo img {
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled .logo img {
+    height: 32px !important;
+}
+
+.scrolled .top-menu {
+    display: none !important;
+}
+
 
 /* Hero Carousel */
 .carousel-caption {
@@ -85,7 +99,7 @@ a:hover {
 }
 
 /* Section Titles */
-.section-.title {
+.section-title {
     color: #7a0019;
     font-weight: bold;
     text-align: center;
