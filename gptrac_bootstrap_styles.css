@@ -314,6 +314,24 @@ header.header {
     margin: 0 10px 10px 10px;
 }
 
+/* Partner Logos Section */
+#partnerCarousel .carousel-item {
+    height: 120px;
+}
+
+#partnerCarousel .partner-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#partnerCarousel .partner-logo img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
 /* Footer */
 .footer {
     background-color: #212529;
