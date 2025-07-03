@@ -249,13 +249,42 @@ header.header {
 
 
 /* Sidebar */
-.sidebar .card {
-    margin-bottom: 1.5rem;
+.sidebar-column {
+    background-color: #f7f5ef;
+    padding: 20px;
 }
 
-.sidebar .card-title {
-    color: #7a0019;
-    font-weight: bold;
+.sidebar-column .card {
+    border-top: 4px solid #799a02;
+    border-radius: 0;
+}
+
+.sidebar-column .card-title {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sidebar-column .form-control {
+    background-color: #e9f0e4;
+}
+
+.sidebar-column .form-control:focus {
+    background-color: #e4eadf;
+    border-color: #8eb402;
+    box-shadow: 0 0 0 0.25rem rgba(142, 180, 2, 0.25);
+}
+
+.sidebar-column .btn-primary {
+    background-color: #e4eadf;
+    border-color: #e4eadf;
+    color: #000;
+}
+
+.sidebar-column .btn-primary:hover {
+    background-color: #8eb402;
+    border-color: #8eb402;
+    color: #fff;
 }
 
 /* News and Events */
