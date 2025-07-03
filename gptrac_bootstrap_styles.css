@@ -250,11 +250,12 @@ header.header {
 
 /* Sidebar */
 .sidebar-column {
-    background-color: #f7f5ef;
+    background-color: transparent;
     padding: 20px;
 }
 
 .sidebar-column .card {
+    background-color: #f7f5ef;
     border-top: 4px solid #799a02;
     border-radius: 0;
 }
@@ -288,12 +289,29 @@ header.header {
 }
 
 /* News and Events */
-.news-item, .event-item {
-    margin-bottom: 1.5rem;
+.news-events-card .card-title {
+    color: #062d2a;
 }
 
-.news-item h5, .event-item h5 {
-    font-weight: bold;
+.news-item h5,
+.event-item h5 {
+    background-color: #045454;
+    color: #fff;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18.998px;
+    font-weight: 700;
+}
+
+.news-item a,
+.event-item a {
+    text-decoration: none;
+}
+
+.news-item p,
+.event-item p {
+    color: #062d2a;
+    margin: 0 10px 10px 10px;
 }
 
 /* Footer */
